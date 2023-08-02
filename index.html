@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Project Managment Tool</title>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+      <div class = "container" id = "container">
+        <h1> Project Management Tool</h1>
+          <div class="tasklist" id="tasklist">
+            <h2>Task List</h2>
+         <form id="taskform">
+           <input type="text" id="nameinput" placeholder="Name" required>
+           <input type="text" id="taskinput" placeholder="Task Description" required>
+           <input type="text" id="timeinput" placeholder = "Time(e.g 9:00am)" required>
+           <input type="text" id = "durationinput" placeholder="Duration(e.g:2 Hours" required>
+           <select id="statusinput">
+             <option value="in-progress">In-Progress</option>
+             <option value"completed">Completed</option>
+           </select>
+           <button type="submit">Assign Task</button>
+         </form>
+          </div>
+  <div class="output">
+    <h2>Task Details</h2>
+    <table id="tasktable">
+      <tr>
+        <th>Name</th>
+        <th>Task</th>
+        <th>Time</th>
+        <th>Duration</th>
+        <th>Status</th>
+      </tr>
+    </table>
+  </div>
+      </div>
+
+  <!-- CHAT BOX -->
+    <div class="container">
+      <h3>ChatHere..</h3>
+    <div class="chat-box">
+      <div class="chat" id="chat">
+        <div class="message received">
+          <p>Hello there!</p>
+        </div>
+      </div>
+      <div class="user-input">
+        <input type="text" id="userMessage" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+      </div>ś
+    </div>
+  </div>
+
+  
+
+  <script src="index.js"></script>
+
+  
+
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
